@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e5eeee;
+}
+.bg-layer{
+    box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.671);
+    background-image: url(./img/bg.jpg);
+    width: 429px;
+    height: 530px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -55px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.bg-layer__card{
+    width: 282px;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif ;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.bg-layer__card *{
+    transition: linear .3s all;
+}
+
+/* ----------------- SIGN IN JOIN US MENU ---------------- */
+.card__menu{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif ;
+}
+.card__menu-item{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 25px;
+    position: relative;
+    right: 20px;
+    top: 3px;
+    opacity: 0.5;
+}
+.card__menu-item--acitve{
+    opacity: 1;
+    border-bottom: #e66a64 2px solid;
+    padding-bottom: 3px;
+    top: 5px;
+}
+.card__menu-item a:link{
+    text-decoration: none;
+    color: white;
+}
+.card__menu-item a:visited{
+    text-decoration: none;
+    color: white;
+}
+.card__menu-item a:focus{
+    text-decoration: none;
+    color: rgb(44, 0, 61);
+    outline: 0;
+    font-size: 21px;
+    transition: linear .5s all;
+}
+
+/* --------------- form --------------- */
+
+
+.card__form{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    position: relative;
+    font-family: 'Quicksand', sans-serif ;
+}
+.card__form [name]{
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background-color: transparent;
+    border: 2px rgba(255, 255, 255, 0.425) solid;
+}
+.card__form [name]:focus{
+    border: rgb(94, 0, 131) 1px solid;
+    outline: 0;
+    box-shadow: 0 0 5px rgb(125, 2, 173);
+    transform: scale(1.1,1.1);
+    
+}
+.form__text{
+    margin: 0px 0px 9px 0px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding-left: 3px;
+}
+.form__text--check-title{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.form__username{
+    margin: 10px 0px 10px 0px;
+}
+.form__password{
+    margin: 5px 0px 18px 0px;
+}
+.card__form [type=checkbox]{
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+.card__form [type=checkbox]:checked+.form__check{
+    font-size: 12px;
+    color: transparent;  
+}
+.form__check{
+    font-size: 12px;
+    color: white;
+    padding: 0px 2px 0px 2px;
+    background-color: #23ae92;
+}
+.card__form [type=checkbox]:focus+.form__check{
+    background-color: tomato;
+    outline: #0a9b7eb6 2px inset;  
+}
+.card__form [type=submit]{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 47px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    padding-left: 5px;
+    background-color: #23ae92;
+    border: 0;
+    letter-spacing: 1px;
+}
+.card__form [type=submit]:focus{
+   border: #0a9b7eb6 3px inset;  
+    outline: 0;
+}
+
+/* -------------- help menu ----------------- */
+
+.card__help-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.form__text--small{
+    font-size: 13px;
+    color: #9a95c4;
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px #9a95c473 solid;
+}
+
+.form__text--small a:link{
+    color: #9a95c4;
+    text-decoration: none;
+}
+.form__text--small a:visited{
+    color: #9a95c4;
+    text-decoration: none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="icon" href="icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="bg-layer">
+        <div class="bg-layer__card">
+            <div class="card__menu">
+                <h1 class="card__menu-item card__menu-item--acitve"><a href="#">Sign in</a></h1>
+                <h1 class="card__menu-item"><a href="#">Join us</a></h1>
+            </div>
+            <form action="#" post="get" class="card__form">
+                <label for="username" class="form__username">
+                    <p class="form__text">Username</p>
+                    <input type="text" name="username" id="username" minlength="4">
+                </label>
+                <label for="password" class="form__password">
+                    <p class="form__text">Password</p>
+                    <input type="password" name="password" id="password" required>
+                </label>
+                <label for="keep">
+                    <input type="checkbox" id="keep">
+                    <span class="form__check">&#x2714;</span>
+                    <span class="form__text form__text--check-title">Keep me signed in</span>
+                </label>
+                <input type="submit" value="Sign in">
+            </form>
+            <div class="card__help-menu">
+                <p class="form__text form__text--small">
+                    <a href="#"> Forgot password
+                    </a> </p>
+                <p class="form__text form__text--small"> <a href="#"> Create an accound</a> </p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
